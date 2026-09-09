@@ -1,2 +1,2 @@
 # CSC-436-Project1
-Personal Portfolio using HTML, CSS, and JavaScript. 
+Personal Portfolio Project using HTML, CSS, and JavaScript. 
