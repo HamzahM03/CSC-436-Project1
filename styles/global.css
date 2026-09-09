@@ -1,0 +1,21 @@
+:root {
+    --bg-color: #0b1220;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    font-family: Arial, sans-serif;
+}
+
+
+/* Don't let an image grow wider than its containing element */
+img {
+    max-width: 100%;
+    height: auto;
+}
