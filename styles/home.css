@@ -1,33 +1,75 @@
+/* MOBILE FIRST */
 
-
-.navbar{
+.navbar {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding:1rem;
+    flex-direction: column;
+    padding: 1rem;
 }
 
-.navbar img {
+/* Controls logo + menu button */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.nav-logo img {
     width: 84px;
     height: auto;
 }
 
-/* Browsers give <ul> default margin and padding, so remove it */
+.menu-toggle {
+    display: block;
+}
+
+/* Hidden until the menu button is clicked */
+.nav-links {
+    display: none;
+}
+
+.nav-links.is-open {
+    display: block;
+}
+
 .nav-links ul {
     display: flex;
-    gap:20px;
+    flex-direction: column;
+    gap: 10px;
+
     margin: 0;
     padding: 0;
 }
 
 .nav-links li {
     list-style: none;
-    
 }
 
-
 .nav-links a {
-    color:white;
+    color: white;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: block;
+       
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
 }
