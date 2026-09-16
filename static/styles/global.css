@@ -4,6 +4,10 @@
     --accent-color: #3ecf8e;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }

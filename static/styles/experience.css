@@ -1,0 +1,125 @@
+/* MOBILE FIRST */
+
+.experience {
+    padding: 4rem 1rem;
+}
+
+.experience h2 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background-color: #111a2b;
+    border: 1px solid #1f2a3a;
+    border-radius: 12px;
+
+    padding: 1.5rem;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    border-color: #3ecf8e;
+}
+
+.experience-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.experience-card h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.experience-role {
+    color: #3ecf8e;
+    margin: 0.4rem 0 0;
+    font-weight: 600;
+}
+
+.experience-date {
+    color: #94a3b8;
+    margin: 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.experience-details {
+    color: #cbd5e1;
+    line-height: 1.7;
+
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.experience-details li {
+    margin-bottom: 0.75rem;
+    
+}
+
+.experience-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.experience-tech span {
+    background-color: #0b1220;
+    color: #cbd5e1;
+
+    padding: 0.4rem 0.75rem;
+    border-radius: 9999px;
+
+    font-size: 0.85rem;
+}
+
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .experience {
+        padding: 6rem 2rem;
+    }
+
+    .experience h2 {
+        font-size: 2.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-card-featured {
+        grid-column: 1 / -1;
+    }
+
+    .experience-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .experience-card {
+        padding: 2rem;
+    }
+}
